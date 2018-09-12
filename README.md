@@ -36,6 +36,7 @@ pip install --user Cython
 pip install --user contextlib2
 pip install --user jupyter
 pip install --user matplotlib
+pip install --user pillow
 ```
 
 ### Coco API Installation
