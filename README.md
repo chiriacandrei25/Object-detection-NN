@@ -62,6 +62,8 @@ python object_detection/builders/model_builder_test.py
 ### Running for images
 In the directory containing the models and the source code, create a folder named "test_images" and upload the images for processing.
 
+![](https://github.com/chiriacandrei25/Object-detection-NN/blob/master/screenshot.jpg)
+
 ### Running for camera
 In case of multiple cameras, choose the one you want to stream from, by setting the index in the line ```capture = cv2.VideoCapture(0/1/2/...)```
 
