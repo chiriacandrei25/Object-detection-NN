@@ -50,12 +50,21 @@ The Tensorflow Object Detection API uses Protobufs to configure model and traini
 protoc object_detection/protos/*.proto --python_out=.
 ```
 
+### Importing the models
+You can download the models directory along with a trained Neural Network from [models](https://github.com/tensorflow/models/tree/master/research/object_detection)
+
 ### Testing the Installation
 You can test that you have correctly installed the Tensorflow Object Detection API by running the following command:
 
 ```
 python object_detection/builders/model_builder_test.py
 ```
+### Running for images
+In the directory containing the models and the source code, create a folder named "test_images" and upload the images for processing.
+
+### Running for camera
+In case of multiple cameras, choose the one you want to stream from, by setting the index in the line ```capture = cv2.VideoCapture(0/1/2/...)```
+
 
 ### Running Tensorboard
 Progress for training and eval jobs can be inspected using Tensorboard. If using the recommended directory structure, Tensorboard can be run using the following command:
