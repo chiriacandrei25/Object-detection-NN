@@ -40,10 +40,10 @@ pip install --user pillow
 ```
 
 ### Coco API Installation
-Download the [Coco API](https://github.com/cocodataset/cocoapi) and copy the pycocotools subfolder to the tensorflow/models/research directory if you are interested in using COCO evaluation metrics. The default metrics are based on those used in Pascal VOC evaluation. To use the COCO object detection metrics add metrics_set: "coco_detection_metrics" to the eval_config message in the config file. To use the COCO instance segmentation metrics add metrics_set: "coco_mask_metrics" to the eval_config message in the config file.
+Download the [Coco API](https://github.com/cocodataset/cocoapi) and copy the pycocotools subfolder to the tensorflow/models/research directory if you are interested in using COCO evaluation metrics. The default metrics are based on those used in Pascal VOC evaluation. To use the COCO object detection metrics add ``metrics_set``: ``coco_detection_metric`` to the ``eval_config`` message in the config file. To use the COCO instance segmentation metrics add ``metrics_set``: ``coco_mask_metrics`` to the ``eval_config`` message in the config file.
 
 ### Protobuf Compilation
-The Tensorflow Object Detection API uses Protobufs to configure model and training parameters. Before the framework can be used, the Protobuf libraries must be compiled. This should be done by running the following command from the tensorflow/models/research/ directory:
+The Tensorflow Object Detection API uses Protobufs to configure model and training parameters. Before the framework can be used, the Protobuf libraries must be compiled. This should be done by running the following command from the ``tensorflow/models/research/`` directory:
 
 ```
 # From tensorflow/models/research/
